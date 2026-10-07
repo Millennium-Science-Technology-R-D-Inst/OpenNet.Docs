@@ -1,25 +1,21 @@
 # 常见问题
 
-## OpenNet 支持 Windows 10 吗？
+## 支持哪些 Windows 版本？
 
-Windows 10 不在当前支持计划中。项目说明指出它在部分环境下可能运行，但核心功能、RPC 调用或界面可能遇到问题，且不保证修复。推荐使用受支持的 Windows 11 x64 或 ARM64 设备。
+正式支持 Windows 11 x64 与 ARM64。Windows 10 不在支持计划内，可能可以运行但不保证兼容。
 
-## 我在哪里下载 OpenNet？
+## 支持哪些下载方式？
 
-请使用 [Microsoft Store 页面](https://apps.microsoft.com/detail/9nhbtsz6s5z2)。当前版本信息也可以在 [GitHub Releases](https://github.com/hoshiizumiya/OpenNet/releases) 中查看。
+当前支持 .torrent 文件、磁力链接、HTTP / HTTPS 下载，以及 RSS 订阅规则自动添加任务。FTP 不在当前已实现功能列表内。
 
-## NAT 工具会自动打通网络吗？
+## DHT、PEX、LSD 或自动 NAT 穿透现在可用吗？
 
-目前文档将 NAT 工具描述为网络状态检查工具。自动 NAT 穿透列在开发路线图中，因此不能把状态检查当成自动端口映射或穿透已经完成。
+这些能力属于路线图。当前版本的 NAT 工具用于检查网络状态，不等同于自动 NAT 穿透或完整的 NAT 检测功能。
 
-## RSS 会自动开始下载吗？
+## 能否远程管理或使用多用户账号？
 
-项目支持 RSS 订阅与自动添加任务。自动化结果取决于你的订阅规则；启用前请检查匹配条件和下载行为。
-
-## 首次构建需要多久？
-
-构建时会准备 NuGet 与 vcpkg 依赖，时间取决于网络、硬件和构建配置。项目 README 给出的首次构建参考范围约为 30–100 分钟。
+远程控制、用户登录与多用户管理列在路线图中，详见[发展路线图](/developer/roadmap)。
 
 ## 如何报告问题？
 
-在 [OpenNet Issues](https://github.com/hoshiizumiya/OpenNet/issues) 中先搜索现有报告。提交时附上应用版本、Windows 版本、复现步骤和相关日志；不要在公开报告中加入账号凭据或个人数据。
+到 [OpenNet Issues](https://github.com/hoshiizumiya/OpenNet/issues) 搜索相似问题后再提交，并附系统与应用版本、架构、复现步骤和预期结果。

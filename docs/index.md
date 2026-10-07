@@ -1,53 +1,45 @@
 ---
 layout: home
-
 hero:
-  name: OpenNet
-  text: 面向 Windows 的下载与网络管理
-  tagline: 从种子和磁力链接，到 HTTP 下载、RSS 与集成 WebUI，在一个原生 Windows 应用中管理你的任务。
+  name: OpenNet for Windows
+  text: Windows 上的下载与网络任务管理
+  tagline: 使用一个原生 Windows 应用管理 BitTorrent、HTTP/HTTPS 下载、RSS 订阅与集成 WebUI。
   image:
-    src: https://raw.githubusercontent.com/hoshiizumiya/OpenNet/master/OpenNet/Assets/AppIcons/StoreLogo.scale-400.png
-    alt: OpenNet 应用图标
+    src: /favicon.svg
+    alt: OpenNet for Windows
   actions:
     - theme: brand
-      text: 从 Microsoft Store 获取
+      text: Microsoft Store 下载
       link: https://apps.microsoft.com/detail/9nhbtsz6s5z2
     - theme: alt
-      text: 开始使用
-      link: /guide/overview
-
+      text: 快速开始
+      link: /guide/quick-start
 features:
-  - title: 多来源下载
-    details: 管理 BitTorrent 种子文件、磁力链接与 HTTP/HTTPS 下载任务。
-  - title: RSS 订阅
-    details: 订阅 RSS 源，并按规则自动添加下载任务。
+  - title: BitTorrent
+    details: 添加 .torrent 文件或磁力链接，并查看任务文件与对等节点信息。
+  - title: HTTP / HTTPS
+    details: 在同一客户端中管理 HTTP 和 HTTPS 文件下载。
+  - title: RSS 自动下载
+    details: 订阅 RSS 源，并根据规则自动添加任务。
   - title: 集成 WebUI
-    details: 在应用中使用 WebUI 管理体验。
+    details: 使用应用提供的 WebUI 体验管理下载任务。
   - title: 网络状态工具
-    details: 使用 NAT 工具检查网络状态；自动 NAT 穿透仍在开发路线图中。
+    details: 查看网络状态；自动 NAT 穿透和 DHT 等能力仍在路线图中。
 ---
+## 先了解 OpenNet
 
-## 界面预览
+OpenNet 是使用 WinUI 3 与 C++/WinRT 构建的 Windows 下载客户端，目前支持 Windows 11 x64 与 ARM64。Windows 10 不在支持范围内。
 
-以下图片来自 OpenNet 源仓库的产品预览，实际界面可能随版本更新。
+[了解项目](/project) · [查看功能指南](/features/) · [浏览源码](https://github.com/hoshiizumiya/OpenNet)
 
-<div class="screenshot-grid">
-  <figure>
-    <img src="https://raw.githubusercontent.com/hoshiizumiya/OpenNet/master/docs/assets/TasksDownloadSpeedGraph.png" alt="OpenNet 下载任务速度图与概览界面" loading="lazy">
-    <figcaption>任务概览与下载速度记录</figcaption>
-  </figure>
-  <figure>
-    <img src="https://raw.githubusercontent.com/hoshiizumiya/OpenNet/master/docs/assets/TasksFiles.png" alt="OpenNet 任务文件列表" loading="lazy">
-    <figcaption>查看任务包含的文件</figcaption>
-  </figure>
-  <figure>
-    <img src="https://raw.githubusercontent.com/hoshiizumiya/OpenNet/master/docs/assets/TasksPagePeers.png" alt="OpenNet 对等节点列表" loading="lazy">
-    <figcaption>查看任务的对等节点信息</figcaption>
-  </figure>
-</div>
+## 文档导航
 
-## 项目状态
+- [下载与安装](/guide/download)：从 Microsoft Store 获取应用并了解支持平台。
+- [快速开始](/guide/quick-start)：认识当前可用的下载方式与管理入口。
+- [功能总览](/features/)：查看 BitTorrent、HTTP/HTTPS、RSS、WebUI 与网络工具说明。
+- [常见问题](/guide/faq)：了解系统要求、功能状态和常见限制。
+- [开发者文档](/developer/build)：从源码构建 OpenNet。
 
-OpenNet 面向 Windows 11 x64 与 ARM64。自动 NAT 穿透、更多分布式网络能力与远程控制等功能属于路线图，文档会将它们和当前功能分开说明。
+## 当前功能与路线图
 
-[查看项目概览](/guide/overview) · [阅读开发构建指南](/developer/build) · [GitHub 源码](https://github.com/hoshiizumiya/OpenNet)
+自动 NAT 穿透、DHT / PEX / LSD、远程控制以及用户登录和多用户管理属于路线图，不代表当前版本已提供。[查看完整路线图](/developer/roadmap)。

@@ -1,25 +1,21 @@
-# FAQ
+# Frequently asked questions
 
-## Does OpenNet support Windows 10?
+## Which Windows versions are supported?
 
-Windows 10 is not in the current support plan. The project notes that it may run in some environments, but core functions, RPC calls or UI may have issues and fixes are not guaranteed. Windows 11 x64 or ARM64 is recommended.
+Windows 11 x64 and ARM64 are supported. Windows 10 is outside the support plan and compatibility is not guaranteed.
 
-## Where can I download OpenNet?
+## Which download methods are available?
 
-Use the [Microsoft Store page](https://apps.microsoft.com/detail/9nhbtsz6s5z2). Current version information is also available from [GitHub Releases](https://github.com/hoshiizumiya/OpenNet/releases).
+Current features include .torrent files, magnet links, HTTP / HTTPS downloads, and RSS subscriptions with automatic downloads. FTP is not listed as implemented.
 
-## Do the NAT tools automatically open ports?
+## Are DHT, PEX, LSD, or automatic NAT traversal available?
 
-The current documentation describes the NAT tools as a way to check network status. Automatic NAT traversal is on the roadmap, so a status check should not be treated as automatic port mapping or traversal.
+These are roadmap items. The current NAT tools check network status; this is not the same as automatic traversal or full NAT detection.
 
-## Will RSS start downloads automatically?
+## Can I manage the app remotely or use multiple user accounts?
 
-OpenNet supports RSS subscriptions and automatic task addition. The result depends on your feed rules; review match conditions and download behavior before enabling them.
-
-## How long does a first build take?
-
-The first build prepares NuGet and vcpkg dependencies. Timing depends on network, hardware and build configuration. The project README gives an approximate range of 30–100 minutes.
+Remote control, user login, and multi-user management are on the roadmap. See the [roadmap](/en-US/developer/roadmap).
 
 ## How do I report a problem?
 
-Search existing reports in [OpenNet Issues](https://github.com/hoshiizumiya/OpenNet/issues). Include the app version, Windows version, reproduction steps and relevant logs. Do not include credentials or personal data in public reports.
+Search [OpenNet Issues](https://github.com/hoshiizumiya/OpenNet/issues) for duplicates, then include your system and app versions, architecture, reproduction steps, and expected result.

@@ -1,24 +1,11 @@
-# OpenNet Docs
+# OpenNet for Windows documentation
 
-Bilingual documentation for [OpenNet](https://github.com/hoshiizumiya/OpenNet), a Windows download and network management application.
+Bilingual VitePress documentation for OpenNet for Windows.
 
-## Run locally
+- Website: https://millennium-science-technology-r-d-inst.github.io/OpenNet.Docs/
+- Product: https://github.com/hoshiizumiya/OpenNet
+- Languages: Simplified Chinese (docs/) and English (docs/en-US/)
+- Local development: npm install, then npm run docs:dev
+- Production build: npm run docs:build
 
-Requirements: Node.js 20 or newer.
-
-    npm install
-    npm run docs:dev
-
-Open the local URL shown by VitePress. Build the static site with:
-
-    npm run docs:build
-
-The build output is written to `dist/`. The documentation is written in Simplified Chinese at the site root and in English under `/en-US/`.
-
-## Content
-
-- Getting started, downloads, usage and FAQs
-- Windows development and build guide
-- Local full-text search and language switcher
-
-Product preview images are loaded from the OpenNet repository's `docs/assets` folder.
+GitHub Actions builds and deploys the site to GitHub Pages on pushes to main.

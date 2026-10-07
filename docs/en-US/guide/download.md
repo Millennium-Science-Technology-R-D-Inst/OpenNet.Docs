@@ -1,20 +1,9 @@
 # Download and install
 
-## Microsoft Store
+Get OpenNet from the [Microsoft Store](https://apps.microsoft.com/detail/9nhbtsz6s5z2), which provides supported installation packages and updates.
 
-OpenNet is available from the Microsoft Store. Open the page on a Windows device to see the current version and installation options.
+Windows 11 x64 and ARM64 are supported. Windows 10 is outside the support plan; it may run on some systems, but compatibility is not guaranteed and core calls or UI issues may occur.
 
-[Open the OpenNet Microsoft Store page](https://apps.microsoft.com/detail/9nhbtsz6s5z2)
+For a Store installation, check the Store Downloads or Library section for updates. If installation or startup fails, read [troubleshooting](/en-US/guide/troubleshooting), then report it in [the project repository](https://github.com/hoshiizumiya/OpenNet/issues).
 
-## System requirements
-
-- Windows 11 x64 or ARM64.
-- Windows 10 is not in the project's support plan, and fixes are not guaranteed for issues on that platform.
-
-## Updates
-
-If you installed OpenNet from the Microsoft Store, check the Store for updates. Version information and release notes are also available from [OpenNet GitHub Releases](https://github.com/hoshiizumiya/OpenNet/releases).
-
-## After installation
-
-The first launch or first build may take time while dependencies are prepared. For adding and managing tasks, read [Common workflows](/en-US/guide/usage).
+Building from source is a developer workflow requiring Visual Studio, Windows SDK, MSVC, and vcpkg. See [the build guide](/en-US/developer/build). This user guide does not provide a separate sideload package.

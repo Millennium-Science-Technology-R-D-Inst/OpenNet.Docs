@@ -1,20 +1,9 @@
 # 下载与安装
 
-## Microsoft Store
+从 [Microsoft Store 的 OpenNet 页面](https://apps.microsoft.com/detail/9nhbtsz6s5z2)获取应用。Store 页面提供受支持的安装包与更新。
 
-OpenNet 可从 Microsoft Store 获取。使用 Windows 设备打开下方页面，查看当前可用版本与商店提供的安装选项。
+当前支持 Windows 11 x64 与 ARM64。Windows 10 不在支持计划中；虽然某些系统上可能可以运行，但项目不承诺兼容性，也可能出现核心调用或界面问题。
 
-[打开 OpenNet Microsoft Store 页面](https://apps.microsoft.com/detail/9nhbtsz6s5z2)
+通过 Store 安装时，可在“下载”或“库”中检查更新。遇到安装或启动问题，请先看[故障排查](/guide/troubleshooting)，然后在[项目仓库](https://github.com/hoshiizumiya/OpenNet/issues)反馈。
 
-## 系统要求
-
-- Windows 11 x64 或 ARM64。
-- Windows 10 不在项目支持计划内；如果运行时遇到问题，项目不保证提供修复。
-
-## 更新
-
-通过 Microsoft Store 安装的版本可以在商店中查看更新。版本和发布说明以商店页面及 [OpenNet GitHub Releases](https://github.com/hoshiizumiya/OpenNet/releases) 为准。
-
-## 安装后
-
-首次启动或首次构建可能需要等待依赖准备。若要了解如何添加任务，请阅读[常见使用流程](/guide/usage)。
+从源码构建属于开发者流程，需安装 Visual Studio、Windows SDK、MSVC 与 vcpkg 等依赖，详见[构建指南](/developer/build)。本用户指南不提供独立侧载包。
